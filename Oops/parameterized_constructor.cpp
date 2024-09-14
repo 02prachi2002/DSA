@@ -22,6 +22,7 @@ class Student{
         name = _name;
         gender = _gender;
     }
+
        //constructor 3
      Student(string _name, string _gender , string _subject, int _marks){
         name = _name;
@@ -34,6 +35,13 @@ class Student{
         this->name = name;
         this->gender = gender;
         this->marks = marks;
+    }
+
+// this is the constructor with default argument 
+// constructor 5
+    Student( string _gender ,int _marks =10){
+        marks = _marks;
+        gender = _gender;
     }
 };
 
